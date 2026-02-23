@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPath — 找到你的训练之路</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">
+            <span class="logo-icon">💪</span>
+            <span class="logo-text">FitPath</span>
+        </a>
+        <div class="nav-links">
+            <a href="#goals">训练目标</a>
+            <a href="#programs">训练计划</a>
+            <a href="#how">怎么用</a>
+            <a href="#testimonials">用户反馈</a>
+        </div>
+        <a href="#quiz" class="btn btn-primary btn-sm">免费测试 →</a>
+        <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">🔥 已有 12,000+ 用户找到了适合自己的训练</div>
+            <h1>别再盲目训练了<br><span class="gradient-text">找到属于你的路</span></h1>
+            <p class="hero-subtitle">
+                不管你是想减脂、增肌、还是为某项运动提升表现——
+                回答几个问题，AI 帮你匹配最合适的训练计划。
+            </p>
+            <div class="hero-actions">
+                <a href="#quiz" class="btn btn-primary btn-lg">
+                    开始匹配 — 免费
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#programs" class="btn btn-ghost btn-lg">浏览全部计划</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">训练计划</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">用户评分</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">完成率</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card hero-card-main">
+                <div class="card-header-tag">🎯 为你推荐</div>
+                <h3>HIIT 燃脂挑战</h3>
+                <p>4周 · 每周4次 · 中高强度</p>
+                <div class="card-stats-row">
+                    <span class="card-stat">🔥 平均 -4kg</span>
+                    <span class="card-stat">⏱ 30分钟/次</span>
+                </div>
+                <div class="card-progress">
+                    <div class="progress-bar" style="width: 78%"></div>
+                </div>
+                <span class="card-progress-text">78% 用户坚持完成</span>
+            </div>
+            <div class="hero-card hero-card-float hero-card-float-1">
+                <span class="float-emoji">🏋️</span>
+                <span>增肌训练 · 匹配度 96%</span>
+            </div>
+            <div class="hero-card hero-card-float hero-card-float-2">
+                <span class="float-emoji">🧘</span>
+                <span>瑜伽放松 · 匹配度 89%</span>
+            </div>
+            <div class="hero-card hero-card-float hero-card-float-3">
+                <span class="float-emoji">⚡</span>
+                <span>已完成今日训练!</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Goals Section -->
+<section class="goals" id="goals">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">🎯 选择你的目标</span>
+            <h2>你想达到什么效果？</h2>
+            <p>不同目标，不同路径。选一个开始。</p>
+        </div>
+        <div class="goals-grid">
+            <div class="goal-card" data-goal="lose">
+                <div class="goal-icon">🔥</div>
+                <h3>减脂塑形</h3>
+                <p>科学减脂，不反弹。HIIT、有氧、力量结合，让你看到真正的变化。</p>
+                <div class="goal-tags">
+                    <span class="tag">HIIT</span>
+                    <span class="tag">有氧</span>
+                    <span class="tag">饮食指导</span>
+                </div>
+                <div class="goal-meta">
+                    <span>📋 42个计划</span>
+                    <span>👥 5.2k人在练</span>
+                </div>
+                <a href="#programs" class="goal-link">查看计划 →</a>
+            </div>
+            <div class="goal-card" data-goal="gain">
+                <div class="goal-icon">💪</div>
+                <h3>增肌增力</h3>
+                <p>系统力量训练，从新手到进阶。渐进超负荷，看得到的进步。</p>
+                <div class="goal-tags">
+                    <span class="tag">力量</span>
+                    <span class="tag">器械</span>
+                    <span class="tag">营养方案</span>
+                </div>
+                <div class="goal-meta">
+                    <span>📋 56个计划</span>
+                    <span>👥 4.8k人在练</span>
+                </div>
+                <a href="#programs" class="goal-link">查看计划 →</a>
+            </div>
+            <div class="goal-card" data-goal="relax">
+                <div class="goal-icon">🧘</div>
+                <h3>休闲放松</h3>
+                <p>不追求极限，只想动一动。瑜伽、拉伸、轻有氧，让身体舒服。</p>
+                <div class="goal-tags">
+                    <span class="tag">瑜伽</span>
+                    <span class="tag">拉伸</span>
+                    <span class="tag">冥想</span>
+                </div>
+                <div class="goal-meta">
+                    <span>📋 38个计划</span>
+                    <span>👥 3.1k人在练</span>
+                </div>
+                <a href="#programs" class="goal-link">查看计划 →</a>
+            </div>
+            <div class="goal-card" data-goal="sport">
+                <div class="goal-icon">⚡</div>
+                <h3>运动表现</h3>
+                <p>为跑步、篮球、游泳等特定运动设计，提升你的竞技水平。</p>
+                <div class="goal-tags">
+                    <span class="tag">跑步</span>
+                    <span class="tag">篮球</span>
+                    <span class="tag">游泳</span>
+                </div>
+                <div class="goal-meta">
+                    <span>📋 64个计划</span>
+                    <span>👥 2.9k人在练</span>
+                </div>
+                <a href="#programs" class="goal-link">查看计划 →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section class="programs" id="programs">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">🏆 热门计划</span>
+            <h2>最受欢迎的训练计划</h2>
+            <p>真实用户验证，高完成率，有效果。</p>
+        </div>
+        <div class="program-filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="lose">减脂</button>
+            <button class="filter-btn" data-filter="gain">增肌</button>
+            <button class="filter-btn" data-filter="relax">放松</button>
+            <button class="filter-btn" data-filter="sport">运动</button>
+        </div>
+        <div class="programs-grid">
+            <!-- Program 1 -->
+            <div class="program-card" data-category="lose">
+                <div class="program-badge hot">🔥 最热</div>
+                <div class="program-header">
+                    <div class="program-icon">🏃</div>
+                    <div>
+                        <h3>4周极速燃脂</h3>
+                        <span class="program-level">中级</span>
+                    </div>
+                </div>
+                <p>结合 HIIT 和力量训练，4周平均减重3-5kg。适合有一定基础的人。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">4周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">5次/周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">35分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">无需</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.9 <span>(1.2k评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="program-card" data-category="gain">
+                <div class="program-badge new">✨ 新上</div>
+                <div class="program-header">
+                    <div class="program-icon">🏋️</div>
+                    <div>
+                        <h3>新手增肌入门</h3>
+                        <span class="program-level">初级</span>
+                    </div>
+                </div>
+                <p>从零开始的力量训练计划。学动作、打基础、建肌肉。包含详细动作教学。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">8周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">4次/周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">45分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">哑铃</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.8 <span>(890评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program-card" data-category="relax">
+                <div class="program-header">
+                    <div class="program-icon">🧘</div>
+                    <div>
+                        <h3>晨间瑜伽唤醒</h3>
+                        <span class="program-level">入门</span>
+                    </div>
+                </div>
+                <p>每天15分钟，温和唤醒身体。改善体态、缓解腰背疼痛、提升一天精神。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">持续</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">每天</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">15分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">瑜伽垫</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.9 <span>(2.1k评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+
+            <!-- Program 4 -->
+            <div class="program-card" data-category="sport">
+                <div class="program-badge popular">👑 口碑</div>
+                <div class="program-header">
+                    <div class="program-icon">🏀</div>
+                    <div>
+                        <h3>篮球体能强化</h3>
+                        <span class="program-level">中高级</span>
+                    </div>
+                </div>
+                <p>专为篮球爱好者设计。提升弹跳、速度、耐力和核心稳定性。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">6周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">4次/周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">50分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">健身房</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.7 <span>(560评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+
+            <!-- Program 5 -->
+            <div class="program-card" data-category="lose">
+                <div class="program-header">
+                    <div class="program-icon">💃</div>
+                    <div>
+                        <h3>快乐燃脂舞蹈</h3>
+                        <span class="program-level">入门</span>
+                    </div>
+                </div>
+                <p>跟着音乐动起来！零门槛、超有趣的舞蹈有氧，让减肥不再痛苦。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">持续</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">3次/周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">25分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">无需</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.8 <span>(1.8k评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+
+            <!-- Program 6 -->
+            <div class="program-card" data-category="gain">
+                <div class="program-header">
+                    <div class="program-icon">💥</div>
+                    <div>
+                        <h3>进阶力量突破</h3>
+                        <span class="program-level">高级</span>
+                    </div>
+                </div>
+                <p>5/3/1 渐进超负荷体系，突破力量平台期。深蹲、硬拉、卧推系统提升。</p>
+                <div class="program-details">
+                    <div class="detail">
+                        <span class="detail-label">时长</span>
+                        <span class="detail-value">12周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">频率</span>
+                        <span class="detail-value">4次/周</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">每次</span>
+                        <span class="detail-value">60分钟</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">器材</span>
+                        <span class="detail-value">健身房</span>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-rating">⭐ 4.9 <span>(670评价)</span></div>
+                    <button class="btn btn-primary btn-sm">开始训练</button>
+                </div>
+            </div>
+        </div>
+        <div class="programs-cta">
+            <a href="#" class="btn btn-ghost btn-lg">查看全部 200+ 计划 →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Quiz Section -->
+<section class="quiz-section" id="quiz">
+    <div class="container">
+        <div class="quiz-wrapper">
+            <div class="quiz-header">
+                <span class="section-tag">🤖 AI 智能匹配</span>
+                <h2>60秒找到你的完美训练</h2>
+                <p>回答几个简单问题，我们帮你从 200+ 计划中找到最合适的。</p>
+            </div>
+            <div class="quiz-body" id="quizBody">
+                <!-- Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 20%"></div>
+                    </div>
+                    <p class="quiz-question">你的主要目标是？</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="lose">
+                            <span class="quiz-option-icon">🔥</span>
+                            <span>减脂塑形</span>
+                        </button>
+                        <button class="quiz-option" data-value="gain">
+                            <span class="quiz-option-icon">💪</span>
+                            <span>增肌增力</span>
+                        </button>
+                        <button class="quiz-option" data-value="relax">
+                            <span class="quiz-option-icon">🧘</span>
+                            <span>休闲放松</span>
+                        </button>
+                        <button class="quiz-option" data-value="sport">
+                            <span class="quiz-option-icon">⚡</span>
+                            <span>运动表现</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step" data-step="2">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 40%"></div>
+                    </div>
+                    <p class="quiz-question">你的运动经验？</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="beginner">
+                            <span class="quiz-option-icon">🌱</span>
+                            <span>刚开始 / 几乎没有</span>
+                        </button>
+                        <button class="quiz-option" data-value="intermediate">
+                            <span class="quiz-option-icon">🌿</span>
+                            <span>有一些基础</span>
+                        </button>
+                        <button class="quiz-option" data-value="advanced">
+                            <span class="quiz-option-icon">🌳</span>
+                            <span>经验丰富</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="quiz-step" data-step="3">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 60%"></div>
+                    </div>
+                    <p class="quiz-question">每周能练几次？</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="2-3">
+                            <span class="quiz-option-icon">📅</span>
+                            <span>2-3次</span>
+                        </button>
+                        <button class="quiz-option" data-value="4-5">
+                            <span class="quiz-option-icon">📅</span>
+                            <span>4-5次</span>
+                        </button>
+                        <button class="quiz-option" data-value="6+">
+                            <span class="quiz-option-icon">📅</span>
+                            <span>6次以上</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="quiz-step" data-step="4">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 80%"></div>
+                    </div>
+                    <p class="quiz-question">你有什么器材？</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="none">
+                            <span class="quiz-option-icon">🏠</span>
+                            <span>啥也没有（徒手）</span>
+                        </button>
+                        <button class="quiz-option" data-value="basic">
+                            <span class="quiz-option-icon">🎒</span>
+                            <span>哑铃 / 弹力带</span>
+                        </button>
+                        <button class="quiz-option" data-value="gym">
+                            <span class="quiz-option-icon">🏋️</span>
+                            <span>健身房</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 5: Results -->
+                <div class="quiz-step" data-step="5">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 100%"></div>
+                    </div>
+                    <div class="quiz-result" id="quizResult">
+                        <div class="result-header">
+                            <span class="result-emoji">🎉</span>
+                            <h3>为你找到了 <span id="resultCount">3</span> 个完美匹配！</h3>
+                        </div>
+                        <div class="result-cards" id="resultCards">
+                            <!-- Populated by JS -->
+                        </div>
+                        <button class="btn btn-primary btn-lg" onclick="resetQuiz()">重新测试</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-section" id="how">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">✨ 简单三步</span>
+            <h2>怎么开始？</h2>
+            <p>不需要私教，不需要经验，跟着走就行。</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <div class="step-icon">🎯</div>
+                <h3>选择目标</h3>
+                <p>告诉我们你想减脂、增肌、放松还是提升运动表现。AI 帮你匹配最合适的计划。</p>
+            </div>
+            <div class="step-connector">→</div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <div class="step-icon">📋</div>
+                <h3>跟着练</h3>
+                <p>每个计划都有详细的动作指导、组数、休息时间。打开就练，不用想。</p>
+            </div>
+            <div class="step-connector">→</div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <div class="step-icon">📈</div>
+                <h3>看见变化</h3>
+                <p>记录每次训练，看数据变化。AI 会根据你的进度动态调整强度。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">💬 真实反馈</span>
+            <h2>用户怎么说</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"以前总是办了健身卡就再也不去了。FitPath 的计划简单好跟，4周减了5斤，关键是我竟然坚持下来了！"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">L</div>
+                    <div>
+                        <strong>Lisa</strong>
+                        <span>4周极速燃脂 · 减重5斤</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"作为健身新手，最怕不知道练什么。这个平台把所有动作都讲得很清楚，跟着做就行。3个月增了6kg体重，明显壮了。"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">K</div>
+                    <div>
+                        <strong>Kevin</strong>
+                        <span>新手增肌入门 · +6kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"每天早上15分钟瑜伽，腰不疼了，睡眠也好了。本来以为健身一定要很辛苦，原来也可以这么舒服。"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div>
+                        <strong>Mia</strong>
+                        <span>晨间瑜伽唤醒 · 坚持6个月</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-wrapper">
+            <h2>准备好开始了吗？</h2>
+            <p>加入 12,000+ 已经在路上的人。免费开始，随时升级。</p>
+            <div class="cta-actions">
+                <a href="#quiz" class="btn btn-white btn-lg">免费开始 →</a>
+            </div>
+            <div class="cta-note">
+                无需信用卡 · 随时取消 · 永久免费计划可用
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">💪</span>
+                    <span class="logo-text">FitPath</span>
+                </a>
+                <p>AI 驱动的个性化健身平台。<br>让每个人都能找到适合自己的训练之路。</p>
+            </div>
+            <div class="footer-col">
+                <h4>产品</h4>
+                <a href="#goals">训练目标</a>
+                <a href="#programs">训练计划</a>
+                <a href="#quiz">智能匹配</a>
+                <a href="#">定价</a>
+            </div>
+            <div class="footer-col">
+                <h4>资源</h4>
+                <a href="#">健身知识</a>
+                <a href="#">营养指南</a>
+                <a href="#">动作库</a>
+                <a href="#">常见问题</a>
+            </div>
+            <div class="footer-col">
+                <h4>关于</h4>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">隐私政策</a>
+                <a href="#">使用条款</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FitPath. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
